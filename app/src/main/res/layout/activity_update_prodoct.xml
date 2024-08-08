@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Update_Prodoct">
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter Name Of Medicne"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter Price Of Medicne"
+        android:textColor="#000000"
+        android:textColorHint="#000000" />
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="337dp"
+        android:layout_height="165dp"
+        android:layout_margin="10dp" />
+
+
+    <Button
+        android:id="@+id/selectImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:text="select" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/skinCare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SkinCare"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/babyCare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BabyCare"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/Drugs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drugs&amp;medicine"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:id="@+id/hygiene"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hygiene"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/back_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:text="Back" />
+
+</LinearLayout>
